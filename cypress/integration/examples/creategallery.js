@@ -1,4 +1,4 @@
-const locators = require('../../fixtures/locators.json')
+//const locators = require('../../fixtures/locators.json')
 import { authLogin } from '../../pageObjects/loginPage.js'
 import { createImg } from '../../pageObjects/createPage.js'
 import { navigation } from '../../pageObjects/navigation.js'
@@ -21,8 +21,8 @@ describe('Logujem se i pravim galeriju', () => {
           navigation.clickCreateGallery()
       })
 
-      it('ispuni podatke', () => {
-          createImg.create('Sloboda', 'http://c.files.bbci.co.uk/954A/production/_116581283_vojvoda1-2.jpg')
+      it('ispuni podatke za create gallery', () => {
+          createImg.create('Sloboda', '', 'http://c.files.bbci.co.uk/954A/production/_116581283_vojvoda1-2.jpg')
       })
 
       /*it('Ispuni podatke', () => {   //Prvi nacin
